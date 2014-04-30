@@ -6,6 +6,7 @@ titlecase.py v0.2
 Original Perl version by: John Gruber http://daringfireball.net/ 10 May 2008
 Python version by Stuart Colville http://muffinresearch.co.uk
 License: http://www.opensource.org/licenses/mit-license.php
+More editing, stealing, breaking by robotmachine
 """
 
 import unittest
@@ -13,8 +14,8 @@ import sys
 import re
 
 
-SMALL = 'a|an|and|as|at|but|by|en|for|if|in|of|or|the|to|v\.?|via|vs\.?'
-PUNCT = "[!\"#$%&'‘()*+,-./:;?@[\\\\\\]_`{|}~]"
+SMALL = 'a|an|and|as|at|but|by|en|for|if|in|on|of|or|the|to|v\.?|via|vs\.?'
+PUNCT = "[!\"#$_%&'‘()*+,-./:;?@[\\\\\\]_`{|}~]"
 
 SMALL_WORDS = re.compile(r'^(%s)$' % SMALL, re.I)
 INLINE_PERIOD = re.compile(r'[a-zA-Z][.][a-zA-Z]')
